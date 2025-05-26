@@ -1,0 +1,29 @@
+
+Endpoint URL
+https://retoolapi.dev/39xMC5/expo
+
+HTTP method endpoints
+
+GET
+/39xMC5/expo
+
+GET filter
+/39xMC5/expo?nombre=value
+
+GET by id
+/39xMC5/expo/1
+
+GET paginate
+/39xMC5/expo?_page=2&_limit=10
+
+POST
+/39xMC5/expo
+
+PUT
+/39xMC5/expo/1
+
+PATCH
+/39xMC5/expo/1
+
+DELETE
+/39xMC5/expo/1
