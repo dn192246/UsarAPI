@@ -1,0 +1,34 @@
+.add-button {
+  position: fixed; /* El botón permanece fijo en la pantalla aunque se haga scroll */
+
+  bottom: 1rem; /* Se ubica 1 rem (16px aprox) desde la parte inferior del viewport */
+
+  right: 1.5rem;/* Se ubica 1.5 rem (24px aprox) desde el borde derecho del viewport */
+
+  background-color: green;/* Color de fondo del botón (puede cambiarse por una variable o tono personalizado) */
+
+  color: white;/* Color del ícono o texto dentro del botón, aún del SVG */
+
+  border: none;/* Se elimina el borde por defecto del botón */
+
+  border-radius: 50%; /* Hace que el botón sea completamente redondo (círculo perfecto) */
+
+  width: 70px;
+  height: 70px; /* Tamaño del botón: 56px x 56px aprox (ancho y alto iguales para mantener forma circular) */
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra debajo del botón para dar un efecto flotante (desplazamiento vertical de 4px, desenfoque de 10px, sombra negra con 15% opacidad) */
+
+  z-index: 1001; /* Se asegura de que el botón esté por encima de otros elementos como la tabla o el menú inferior */
+
+  display: flex; /* Permite alinear su contenido con Flexbox */
+
+  align-items: center; /* Centra verticalmente el contenido dentro del botón */
+
+  justify-content: center; /* Centra horizontalmente el contenido dentro del botón */
+
+  transition: transform 0.4s; /* Aplica una transición suave cuando se use `transform` (en este caso, al hacer hover) */
+}
+
+.add-button:hover {
+  transform: scale(1.1);
+}

@@ -28,7 +28,7 @@
     <main class="container">
         <h2>Integrantes del equipo</h2>
 
-        <table  id="tabla" class="overflow-auto">
+        <table id="tabla" class="overflow-auto">
             <thead>
                 <tr>
                     <th>Id</th>
@@ -41,16 +41,34 @@
             </thead>
 
             <tbody>
-                <!--Aqui can los registros de la base que vienen a travez de la API  -->
-                
+                <!--Aqui can los registros de la base que vienen a traves de la API  -->
             </tbody>
-
         </table>
-
-
-
     </main>
 
+    <dialog id="modal-agregar">
+        <article>
+            <header>
+                <a href="#" aria-label="Cerrar" class="close" id="btnCerrarModal"></a>
+                <h3>Nuevo integrante</h3>
+            </header>
+            <form id="frmAgregar">
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="text" id="apellido" placeholder="Apellido" required>
+                <input type="email" id="correo" placeholder="Correo electrónico" required>
+                <button type="submit" class="primary">Guardar</button>
+            </form>
+        </article>
+    </dialog>
+
+    <button class="add-button" id="btnAbrirModal" aria-label="Agregar Integrante" title="Agregar Integrante">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-plus-icon lucide-plus">
+            <path d="M5 12h14" />
+            <path d="M12 5v14" />
+        </svg>
+    </button>
 
     <script src="js/script.js"></script>
 </body>
